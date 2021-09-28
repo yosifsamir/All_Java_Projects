@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="550dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/profile_name_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Enter PIN"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <com.andrognito.pinlockview.IndicatorDots
+            android:id="@+id/indicator_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name_pin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            app:dotDiameter="20dp"
+            app:dotFilledBackground="@drawable/filled" />
+
+        <com.andrognito.pinlockview.PinLockView
+            android:id="@+id/pin_lock_view"
+            android:layout_width="wrap_content"
+            android:background="@color/ColorDefault"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/indicator_dots"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            app:keypadButtonSize="72dp"
+            app:keypadShowDeleteButton="true"
+            app:keypadDeleteButtonSize="20dp"
+            app:keypadTextColor="#ffffff"
+            app:keypadTextSize="40dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:onClick="Forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Forget"
+            android:text="forget"
+            android:textColor="#ffffff"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:onClick="LoginAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Again"
+            android:id="@+id/Loginagain"
+            android:background="@drawable/sign_up_shape"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

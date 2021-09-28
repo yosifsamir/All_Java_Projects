@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepositActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative3">
+
+                <TextView
+                    android:id="@+id/baseDeposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#DD4B3E"
+                    android:textSize="50dp"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#DD4B3E"
+            android:orientation="vertical"
+            android:padding="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relative2">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Account number"
+                    android:id="@+id/account_number_deposit"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textColorHint="#ffffff" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="amount of money"
+                    android:id="@+id/amount_of_money_deposit"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColorHint="#ffffff"
+                    android:layout_below="@id/account_number_deposit"
+                    android:layout_marginTop="20dp"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/amount_of_money"
+                    android:layout_alignParentEnd="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp"
+                        android:gravity="bottom">
+
+                        <Button
+                            android:id="@+id/send_deposit"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:layout_below="@id/frame_layout_2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp"
+                            android:background="@drawable/draw"
+                            android:text="deposit"
+                            android:textColor="#DD4B3E"/>
+
+                        <Button
+                            android:id="@+id/backDesposit"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:layout_below="@id/frame_layout_2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp"
+                            android:background="@drawable/draw"
+                            android:text="cancle"
+                            android:textColor="#DD4B3E"/>
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/send_icon"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+
+
+
+</FrameLayout>

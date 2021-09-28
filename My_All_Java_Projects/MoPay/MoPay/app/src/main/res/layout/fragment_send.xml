@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendFragment"
+    android:orientation="vertical"
+    android:background="#DD4B3E"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="30dp">
+
+
+        <EditText
+            android:id="@+id/username_send_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Username"
+            android:singleLine="true"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/amount_of_money_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_send_fragment"
+            android:layout_marginTop="20dp"
+            android:hint="amount of money"
+            android:singleLine="true"
+            android:textColorHint="#ffffff" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/amount_of_money"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/send_fragment"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:text="send"
+                    android:textColor="#DD4B3E" />
+
+                <Button
+                    android:id="@+id/backSend"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:text="Back"
+                    android:textColor="#DD4B3E" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_gravity="center|top"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:src="@drawable/send_money_icon" />-->
+
+
+
+</FrameLayout>

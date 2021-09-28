@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingTop="40dp"
+        android:paddingRight="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/ColorLine"
+                android:hint="First name"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:inputType="text"
+                android:textColor="@color/ColorDefault"
+                android:textColorHint="@color/ColorDefault" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/ColorLine"
+                android:hint="Last name"
+                android:inputType="text"
+                android:textColorHint="@color/ColorDefault"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/ColorDefault" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorLine"
+            android:singleLine="true"
+            android:hint="Username"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Age"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+        <EditText
+            android:id="@+id/emailSignUp"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Password"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Confirm password"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Pin"
+            android:maxLength="4"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Phone"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="19"
+            android:maxLines="1"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Credit card number"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="cvc/cvv"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorLine"
+            android:hint="Dated"
+            android:lines="1"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:inputType="date"
+            android:textSize="15sp"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <EditText
+            android:id="@+id/card_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/ColorLine"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:maxLines="1"
+            android:hint="Card holder name"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" male"
+                android:textColor="@color/ColorDefault" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text=" female"
+                android:textColor="@color/ColorDefault" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:text="Sign up"
+            android:textColor="#ffffff"
+            android:layout_marginTop="25dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

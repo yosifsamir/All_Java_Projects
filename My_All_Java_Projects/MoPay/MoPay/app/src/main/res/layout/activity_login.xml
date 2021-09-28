@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:paddingBottom="40dp">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/mopay_icon2"
+            android:id="@+id/icon"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email_login"
+            android:singleLine="true"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            android:backgroundTint="@color/ColorLine" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_login"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:textColorHint="@color/ColorDefault"
+            android:textColor="@color/ColorDefault"
+            android:backgroundTint="@color/ColorLine"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <CheckBox
+                android:id="@+id/checkBoxRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="@color/ColorDefault"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/forget"
+                android:onClick="forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/ColorDefault"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Login"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:background="@drawable/button_shape"
+                android:layout_marginRight="10dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:id="@+id/signUp"
+                android:background="@drawable/sign_up_shape"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Term of use. Privacy policy"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

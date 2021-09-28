@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.andrognito.pinlockview:pinlockview:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinlockview-1.0.1.aar/0707586c020a0351bf4a6fe170027fe1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pinlockview-1.0.1.aar/0707586c020a0351bf4a6fe170027fe1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.andrognito.pinlockview/pinlockview/1.0.1/9af4913446ef66a6642196b36504cb1821f7e4c6/pinlockview-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

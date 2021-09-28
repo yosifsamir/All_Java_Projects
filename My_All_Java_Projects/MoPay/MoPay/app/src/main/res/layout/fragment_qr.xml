@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrFragment"
+    android:orientation="vertical"
+
+    android:background="#4FBA6F"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/relative2"
+        android:padding="30dp">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount of money"
+            android:id="@+id/amount_of_money"
+            android:singleLine="true"
+            android:textColorHint="#ffffff" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame_layout_2"
+            android:layout_below="@id/amount_of_money"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/rectangle_205"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:layout_gravity="center"
+                android:id="@+id/qr_image"/>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/frame_layout_2"
+            android:layout_alignParentEnd="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/create_qr"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:text="Create Qr"
+                    android:textColor="@color/ColorDefault" />
+
+                <Button
+                    android:id="@+id/backQR"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="20dp"
+                    android:text="Back"
+                    android:textColor="@color/ColorDefault" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:src="@drawable/qr_icon2"-->
+        <!--android:layout_below="@id/amount_of_money"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:id="@+id/qr_icon"/>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/create_qr"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/frame_layout_2"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:background="@drawable/draw"-->
+        <!--android:paddingLeft="12dp"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:text="Create QR" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/back"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/frame_layout_2"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:paddingLeft="40dp"-->
+        <!--android:paddingRight="40dp"-->
+        <!--android:background="@drawable/draw"-->
+        <!--android:text="Back" />-->
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WithdrawActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relative3">
+
+                <TextView
+                    android:id="@+id/largeWithdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Withdraw"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#4FBA6F"
+                    android:textSize="50dp"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#4FBA6F"
+            android:orientation="vertical"
+            android:padding="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relative2">
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Account number"
+                    android:id="@+id/account_number_withdraw"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:textColorHint="#ffffff" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="amount of money"
+                    android:id="@+id/amount_of_money_withdraw"
+                    android:singleLine="true"
+                    android:textColorHint="#ffffff"
+                    android:inputType="number"
+                    android:layout_below="@id/account_number_withdraw"
+                    android:layout_marginTop="20dp"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/amount_of_money"
+                    android:layout_alignParentEnd="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp"
+                        android:gravity="bottom">
+
+                        <Button
+                            android:id="@+id/withdraw"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:layout_below="@id/frame_layout_2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp"
+                            android:background="@drawable/draw"
+                            android:text="withdraw"
+                            android:textColor="#4FBA6F"/>
+
+                        <Button
+                            android:id="@+id/backWithdraw"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="35dp"
+                            android:layout_below="@id/frame_layout_2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="20dp"
+                            android:background="@drawable/draw"
+                            android:text="cancle"
+                            android:textColor="#4FBA6F"/>
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/with_draw_icon"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+
+
+
+</FrameLayout>

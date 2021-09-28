@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="deposit"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_deposit"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/image1"
+            android:paddingLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="withdraw"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_withdraw"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/image2"
+            android:paddingLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Withdraw"
+            android:textSize="17sp"
+            android:textColor="#4FBA6F"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

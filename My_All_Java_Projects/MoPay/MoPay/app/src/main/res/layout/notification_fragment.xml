@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationFragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageNotification"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_launcher_round"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textSize="17sp"
+                android:id="@+id/email_address"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailAddressNotification"
+                android:text="youssefsamir@gmail.com"
+                android:textSize="18sp"
+                android:textColor="#4FBA6F"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4FBA6F"
+            android:id="@+id/frame_background"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+                <TextView
+                    android:id="@+id/we_well_let"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="we well let you know when you"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/notification_make_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="make a payment"
+                    android:drawableRight="@drawable/ic_mail"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ffffff"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/notification_start_a_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strat a payment but don't complete it"
+                    android:drawableRight="@drawable/ic_mail"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_marginTop="35dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ffffff"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/notification_i_have_a_problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Have a problem with payment"
+                    android:drawableRight="@drawable/ic_mail"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_marginTop="35dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ffffff"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/receive_a_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Receive a payment"
+                    android:drawableRight="@drawable/ic_mail"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_marginTop="35dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ffffff"
+                    android:layout_marginTop="15dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

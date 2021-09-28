@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "238110327921",
+    "firebase_url": "https://mopay-17f40.firebaseio.com",
+    "project_id": "mopay-17f40",
+    "storage_bucket": "mopay-17f40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238110327921:android:67dd92dd628b2cd1",
+        "android_client_info": {
+          "package_name": "com.example.mopay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238110327921-e3fqp7b20ro6hh5h2o52kjqnbim9rjp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mopay",
+            "certificate_hash": "158ba506fc41a40cef889788b51af9a737a3fe4d"
+          }
+        },
+        {
+          "client_id": "238110327921-jmtikqa70rvp37medpo7l6fer5vr1qg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQJy3Jb4w_JXJoI_-DuR07R37EgMuGvv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238110327921-jmtikqa70rvp37medpo7l6fer5vr1qg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
